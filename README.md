@@ -62,22 +62,28 @@ python -m main.py --input_folder ./images --output_folder ./results --input_ext 
 
 ## Visualizing Results
 
+<h2 align="center"><b>Canny Edge Detection Pipeline</b></h2>
+
 <p align="center">
-<table>
-<tr>
-<td align="center"><b>Input Image</b></td>
-<td align="center"><b>Gradient Magnitude</b></td>
-<td align="center"><b>Final Edges</b></td>
-</tr>
-<tr>
-<td><img src="results/sample_input.png" width="300"></td>
-<td><img src="results/sample_magnitude.png" width="300"></td>
-<td><img src="results/sample_edges.png" width="300"></td>
-</tr>
-</table>
+  <table>
+    <tr>
+      <td align="center"><b>Original CT Scan</b></td>
+      <td align="center"><b>Quantized Gradients</b></td>
+      <td align="center"><b>Final Edge Map</b></td>
+    </tr>
+    <tr>
+      <td><img src="results/ctscan.tif" width="300"></td>
+      <td><img src="results/ctscan_quantized_plot_0.5.png" width="300"></td>
+      <td><img src="results/ctscan_edges_0.5_100_50.png" width="300"></td>
+    </tr>
+  </table>
 </p>
 
-## 📝 Key Implementations
+<p align="center">
+  <i>The visualization above shows the transformation from the raw input (left), through the gradient direction quantization (middle), to the final suppressed and thresholded edges (right).</i>
+</p>
+
+## Key Implementations
 
 * **Custom Convolution:** Manual padding and sliding window multiplication.
 * **Direction Quantization:** Grouping angles into 0°, 45°, 90°, and 135° for precise pixel comparison.
