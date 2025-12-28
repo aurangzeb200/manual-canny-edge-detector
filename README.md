@@ -72,7 +72,7 @@ python -m main.py --input_folder ./images --output_folder ./results --input_ext 
       <td align="center"><b>Final Edge Map</b></td>
     </tr>
     <tr>
-      <td><img src="results/ctscan.tif" width="300"></td>
+      <td><img src="results/ctscan.png" width="300"></td>
       <td><img src="results/ctscan_quantized_plot_0.5.png" width="300"></td>
       <td><img src="results/ctscan_edges_0.5_100_50.png" width="300"></td>
     </tr>
